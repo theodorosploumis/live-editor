@@ -1,0 +1,16 @@
+{
+    "name": "tplcom/live-editor",
+    "description": "CSS live editor with php and jQuery",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TheodorosPloumis",
+            "email": "me@theodorosploumis.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "kint-php/kint": "dev-master"
+    }
+}
