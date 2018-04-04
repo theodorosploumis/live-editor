@@ -12,5 +12,8 @@
     "minimum-stability": "dev",
     "require-dev": {
         "kint-php/kint": "dev-master"
+    },
+    "require": {
+        "league/fractal": "^0.13.0@dev"
     }
 }

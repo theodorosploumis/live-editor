@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
     <script src="/assets/live-editor.js"></script>
+    <script src="/assets/template-render.js"></script>
     <link rel="stylesheet" href="live-styles.css">
 
     <style type="text/css">
@@ -30,6 +31,10 @@
             border: 1px dotted;
         }
     </style>
+
+    <script>
+
+    </script>
 </head>
 
 <body>
@@ -67,6 +72,12 @@
             </div>
 
         </aside>
+        
+        <div class="load-html"
+             data-template="templates/example1.html"
+             data-source="http://localhost:3000/person/1,data/company2.json,data/company1.json">
+            <span style="color:red;">Data should load here</span>
+        </div>
 
     </div>
 </body>

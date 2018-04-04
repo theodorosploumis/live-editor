@@ -8,13 +8,20 @@
 	text-align : center;
 }
 .node-02 {
-	background-color : rgb(234,234,234);
+	background-color : rgb(106,204,41);
 	border-radius : 4px;
 	color : rgb(124,2,2);
+	font-size : 20px;
 	padding : 5px;
 	text-align : center;
+	undefined : ;
+}
+.node-03 {
+	undefined : ;
 }
 .node-05 {
+	background-color : rgb(137, 32, 32);
+	color : rgb(252, 252, 252);
 	font-family : ubuntu;
 	font-size : 20px;
 	text-align : right;
