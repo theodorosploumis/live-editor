@@ -1,0 +1,25 @@
+[
+  {
+    "<>":"p",
+    "html":[
+      {"<>":"label","html":"Name: "},
+      {"<>":"span","html":"${name}"}
+    ]
+  },
+  {"<>":"p","html":[
+    {"<>":"label","html":"Email: "},
+    {"<>":"span","html":"${email}"}
+  ]},
+  {"<>":"p","html":[
+    {"<>":"label","html":"Company"},
+    {"<>":"span","html":"${company}"}
+  ]},
+  {"<>":"p","html":[
+    {"<>":"label","html":"Company City"},
+    {"<>":"span","html":"${location}"}
+  ]},
+  {"<>":"p","html":[
+    {"<>":"label","for":"logo","html":"Logo"},
+    {"<>":"span","html":"${logo}"}
+  ]}
+]

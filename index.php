@@ -1,3 +1,4 @@
+<?php include_once "vendor/autoload.php"; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -78,6 +79,48 @@
              data-source="http://localhost:3000/person/1,data/company2.json,data/company1.json">
             <span style="color:red;">Data should load here</span>
         </div>
+        
+        <?php
+        
+            $json = file_get_contents("templates/template-example1.json");
+            $json_array = json_decode($json);
+            
+//            d($json_array);
+            
+            function arrayToHTML($array) {
+                $string = "";
+                $attributes = "";
+                
+                foreach ($array as $k => $v) {
+                    if ($k == "<>") {
+                      $wrapper = $v;
+                    }
+                    if ($k == "html") {
+                      $html = arrayToHTML($v);
+                    } else {
+                      $attributes .= $k."=".$v;
+                    }
+                  $string .= "<" . $wrapper . " ". $attributes ." >";
+                  $string .= $html;
+  
+                  if ($wrapper != "img") {
+                    $string .= "</" . $wrapper . ">";
+                  }
+                }
+                return $string;
+            }
+
+            function jsonToHTML($array) {
+                foreach ($array as $key => $value) {
+                    if (is_integer($key)) {
+                        print arrayToHTML($array[$key]);
+                    }
+                }
+            }
+            
+            jsonToHTML($json_array);
+        
+        ?>
 
     </div>
 </body>
